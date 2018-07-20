@@ -1,0 +1,18 @@
+//  Footer
+//
+//  Styles for the site footer
+
+    .site-footer {
+        padding: space() 0;
+        background-color: $color-green;
+        color: $color-white;
+        text-align: center;
+    }
+
+    .site-footer__legal {
+
+    }
+
+    .site-footer__social li {
+        margin: 0 space(half);
+    }

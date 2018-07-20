@@ -1,0 +1,20 @@
+//  Site Header
+//
+//  Styles for the site header
+
+    .site-header {
+        background-color: $color-green;
+
+        &.section {
+            padding: space() space(landmark) 0;
+            border: 0;
+        }
+    }
+
+        .site-header__logo {
+            border: 0;
+        }
+
+        #siteLogo {
+            max-width: em(200);
+        }

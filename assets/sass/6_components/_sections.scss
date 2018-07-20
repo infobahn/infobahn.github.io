@@ -1,0 +1,72 @@
+//  Section
+//
+//  Styles for various sections of the site
+
+    .section {
+        padding: space(double) space(landmark);
+        border-bottom: 1px solid rgba($color-blue, 0.1);
+    }
+
+        .section__content {
+            position: relative;
+            max-width: em(850, $base-font-size);
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+
+    .intro {
+        position: relative;
+        background-color: $color-green;
+        border: 0;
+        color: $color-white;
+
+        h1 {
+            color: inherit;
+        }
+
+        .section__content {
+            margin: 0;
+        }
+    }
+
+        #introBg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: em(550);
+        }
+
+    .summary {
+
+    }
+
+    .experience {
+
+    }
+
+        .experience__clients {
+            column-gap: space();
+            column-width: em(200);
+        }
+
+    .how-it-works {
+
+    }
+
+    .testimonials {
+
+    }
+
+    .contact {
+
+    }
+
+
+        .cta {
+            @include font-size(large, copy);
+            display: inline-block;
+            margin: 0 em(-2);
+            padding: em(2);
+            border-width: 0 0 2px 0;
+        }

@@ -1,0 +1,25 @@
+// Forms
+//
+// Unclassed form elements
+//
+// Styleguide Base.Forms
+
+    input[type=search] {
+        padding: em(6) space(quarter);
+    }
+
+    select {
+        width: 100%;
+        padding: em(6);
+    }
+
+    label {
+        display: block;
+    }
+
+    input[type=text],
+    input[type=url],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }

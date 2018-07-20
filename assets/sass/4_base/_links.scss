@@ -1,0 +1,28 @@
+// Links
+//
+// Unclassed link elements
+//
+// Styleguide Base.Links
+
+    a {
+        text-decoration: none;
+        color: $color-link;
+        border-bottom: 1px solid currentColor;
+        transition: color .2s ease;
+    }
+
+    a:visited {
+        color: $color-link-visited;
+    }
+
+    a:hover {
+        color: $color-link-hover;
+    }
+
+    a:focus {
+        color: $color-link-focus;
+    }
+
+    a:active {
+        color: $color-link-active;
+    }

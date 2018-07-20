@@ -1,0 +1,23 @@
+// Lists
+//
+// Unclassed list elements
+//
+// Styleguide Base.Lists
+
+    ul, ol {
+        margin: 0 0 space(threequarter);
+        padding-left: space();
+
+        // ul, ol {
+        //     margin: space(quarter) 0;
+        //     padding-left: space(half);
+        // }
+    }
+
+        li {
+            margin-bottom: space(half);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }

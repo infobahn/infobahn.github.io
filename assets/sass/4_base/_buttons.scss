@@ -1,0 +1,44 @@
+// Buttons
+//
+// Unclassed and classed button elements
+//
+// Styleguide Version number\
+
+    input[type=button],
+    input[type=submit],
+    button,
+    .btn {
+        @include font-size(small, copy);
+        display: inline-block;
+        padding: space(quarter, $size-copy-small) space(mid, $size-copy-small);
+        border: 0;
+        border-radius: $border-radius;
+        background-color: $color-btn-bg;
+        color: $color-btn-text;
+        line-height: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-out;
+
+        &:visited {
+            color: $color-btn-text;
+        }
+
+        &:hover {
+            background-color: $color-btn-bg-hover;
+            color: $color-btn-text-hover;
+        }
+    }
+
+    .btn--small,
+    input[type=submit] {
+        padding: em(8, $size-copy-small) space(quarter, $size-copy-small);
+    }
+
+    .btn--full {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }

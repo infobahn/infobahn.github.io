@@ -1,0 +1,37 @@
+// ============================================================================
+//  Base
+// ============================================================================
+
+//  A few base styles on top of normalise.css
+
+//  Set up type sizes breakpoints
+
+    body {
+        font-size: 125%;
+        font-family: $copy-font;
+        line-height: $base-line-height;
+        font-weight: 400;
+        color: $color-text;
+        background: $color-white;
+
+        & > svg {
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+    }
+
+//  Box model
+// ----------------------------------------------------------------------------
+    
+    @if $global-border-box == true {
+        //  Set box-sizing to border-box on all elements
+        //  Add polyfill for IE6/7
+        * {
+            &,
+            &:before,
+            &:after {
+                box-sizing: border-box;
+            }
+        }
+    }

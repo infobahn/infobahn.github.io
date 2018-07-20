@@ -12,6 +12,20 @@
 
     </div><!-- /.site-content -->
 
+    <footer class="site-footer">
+        
+        <p class="site-footer__legal">
+            <small>Push to Dev is incorporated in the Isle of Man #127449C</small>
+        </p>
+
+        <ul class="o-list--inline site-footer__social">
+            <li><a href="mailto:hello@pushtodev.com">Email</a></li>
+            <li><a href="https://twitter.com/pushtodev">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/company/infobahn-ltd/">LinkedIn</a></li>
+        </ul>
+
+    </footer>
+
 	<?php wp_footer(); ?>
 
 </body>

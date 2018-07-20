@@ -1,0 +1,42 @@
+// ============================================================================
+//  Paragraphs
+// ============================================================================
+
+    p {
+        margin: 0 0 space(threequarter);
+    }
+
+    .lede {
+        @include font-size(large, copy);
+        margin-bottom: space(threequarter, $size-copy-large);
+    }
+
+    small {
+        @include font-size(small, copy);
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    .blockquote {
+        margin: space(mid) 0;
+    }
+
+    .blockquote__content {
+        display: block;
+        margin-bottom: space(half);
+        padding: space();
+        background-color: $color-orange;
+        color: $color-white;
+
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    cite {
+        @include font-size(small, copy);
+        display: block;
+        text-align: right;
+    }

@@ -1,0 +1,26 @@
+// ============================================================================
+//  Colours
+// ============================================================================
+
+//  Brand colours
+    $color-green:                                       #33ccbb;
+    $color-orange:                                      #f96b59;
+    $color-pink:                                        #f94680;
+    $color-blue:                                        #2d3859;
+    
+//  White
+    $color-white:                                       #f7f7f8;
+
+//  Black
+    $color-black:                                       #000;
+
+//  Color usages
+    $color-text:                                        #81889b;
+    $color-text-rev:                                    $color-white;
+    $color-heading:                                     $color-orange;
+
+    $color-link:                                        $color-pink;
+    $color-link-visited:                                mix($color-pink, $color-white, 90);
+    $color-link-hover:                                  mix($color-pink, $color-black, 90);
+    $color-link-focus:                                  $color-orange;
+    $color-link-active:                                 $color-orange;
