@@ -4,13 +4,12 @@
 
     .site-footer {
         padding: space() 0;
-        background-color: $color-green;
-        color: $color-white;
         text-align: center;
     }
 
     .site-footer__legal {
-
+        margin: space(half, $size-copy-small) 0 0;
+        color: mix($color-text, $color-white, 70);
     }
 
     .site-footer__social li {

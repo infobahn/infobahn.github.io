@@ -3,13 +3,14 @@
 //  Styles for various sections of the site
 
     .section {
-        padding: space(double) space(landmark);
+        padding: space(landmark);
         border-bottom: 1px solid rgba($color-blue, 0.1);
+        overflow: hidden;
     }
 
         .section__content {
             position: relative;
-            max-width: em(850, $base-font-size);
+            max-width: em(800, $base-font-size);
             margin: 0 auto;
             z-index: 1;
         }
@@ -17,7 +18,8 @@
 
     .intro {
         position: relative;
-        background-color: $color-green;
+        background: linear-gradient($color-green 0%, mix($color-green, $color-blue, 85) 100%);
+        padding-top: space(mid);
         border: 0;
         color: $color-white;
 
@@ -26,6 +28,7 @@
         }
 
         .section__content {
+            max-width: em(850, $base-font-size);
             margin: 0;
         }
     }
@@ -39,27 +42,77 @@
 
     .summary {
 
+        .section__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: none;
+        }
+
+        h2 {
+            margin: 0 space(double, $size-h2) 0 0;
+            text-align: left;
+        }
+
+        p {
+            overflow: hidden;
+            margin: space(quarter) 0 0 0;
+        }
     }
 
     .experience {
+        background-color: $color-pink;
+        background: linear-gradient(45deg, $color-pink 0%, $color-orange 100%);
+        color: mix($color-white, $color-pink, 90);
 
+        h2 {
+            color: $color-white;
+        }
     }
 
         .experience__clients {
-            column-gap: space();
+            margin-top: space(double);
+            column-gap: space(double);
             column-width: em(200);
+            color: $color-white;
         }
 
     .how-it-works {
 
+        .package {
+            margin: space(double) 0;
+            padding: space();
+            background-color: $color-pink;
+            background: linear-gradient(mix($color-pink, $color-black, 95) 0%, mix($color-pink, $color-white, 95) 100%);
+            color: mix($color-white, $color-pink, 90);
+            box-shadow: 0px 1px space() 0px rgba(0, 0, 0, 0.15);
+
+            h3 {
+                color: $color-white;
+            }
+        }
     }
 
     .testimonials {
+        background: radial-gradient(mix($color-green, $color-white, 50), mix($color-green, $color-blue, 80));
+        color: mix($color-white, $color-green, 80);
 
+        h2 {
+            margin: 0;
+            color: $color-white;
+        }
+
+        a, a:visited {
+            color: $color-white;
+        }
     }
 
     .contact {
+        text-align: center;
 
+        p {
+            text-align: left;
+        }
     }
 
 

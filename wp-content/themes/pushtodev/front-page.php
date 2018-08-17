@@ -39,7 +39,8 @@ get_header(); ?>
 
         <div class="section__content">
         
-            <h2>Web development, just for agencies</h2>
+            <h2>Web&nbsp;development,<br>
+            just&nbsp;for&nbsp;agencies</h2>
 
             <p>Running an agency is hard, but we help you make it look easy. We reduce the time, effort and cost of delivering web projects, so that you can focus on the most important thing: your clients.</p>
 
@@ -51,7 +52,7 @@ get_header(); ?>
 
         <div class="section__content">
         
-        <h2>We build websites for companies across the world</h2>
+        <h2>We build websites for companies across&nbsp;the&nbsp;world</h2>
 
         <p>Much of our work goes on behind closed doors in an underground lab buried beneath a secret volcano lair. We can&rsquo;t talk about that.</p>
 
@@ -87,37 +88,57 @@ get_header(); ?>
         
         <h2>Everything you need to streamline your web projects</h2>
 
-        <p>Our partners trust us to manage their most important projects and keep on top of online design and development trends.</p>
+        <div class="how-it-works__cols">
 
-        <p>Every agency, client and project is different, so there&rsquo;s no one-size-fits-all solution. We focus on being flexible, and adjusting our methods to accommodate a variety of project management and production workflows.</p>
+            <p>Our partners trust us to manage their most important projects and keep on top of online design and development trends.</p>
 
-        <p>When you partner with us we&rsquo;ll work with you on a monthly basis to provide everything you need to sell, deliver and maintain web projects for your clients.</p>
+            <p>Every agency, client and project is different, so there&rsquo;s no one-size-fits-all solution. We focus on being flexible, and adjusting our methods to accommodate a variety of project management and production workflows.</p>
 
-        <h3>For you</h3>
+            <p>When you partner with us we&rsquo;ll work with you on a monthly basis to provide everything you need to sell, deliver and maintain web projects for your clients.</p>
 
-        <ul>
+        </div>
 
-            <li><strong>Consultancy</strong>: Send us technical questions, RFPs that need scoping, UX designs requiring technical reviews - whatever you want.</li>
+        <div class="package">
 
-            <li><strong>Web development</strong>: To put towards any ad hoc or project work.</li>
+            <h3>For you</h3>
 
-        </ul>
+            <ul>
 
-        <h3>For your website</h3>
+                <li><strong>Consultancy</strong>: Send us technical questions, RFPs that need scoping, UX designs requiring technical reviews - whatever you want.</li>
 
-        <ul>
+                <li><strong>Web development</strong>: To put towards any ad hoc or project work.</li>
 
-            <li><strong>Codebase management</strong>: A central, version-controlled master of your site&rsquo;s codebase.</li>
+            </ul>
 
-            <li><strong>Regular site backups</strong>: Nightly backups of your site files and database to Amazon Web Services.</li>
+        </div>
 
-            <li><strong>Development site</strong>: A separate development version of your site on it&rsquo;s own proofing URL to test updates before sending them live.</li>
+        <div class="package">
 
-            <li><strong>Uptime monitoring and error reporting</strong>: Any downtime or errors on your site are flagged immediately, so we can spring into action and fix the problem.</li>
+            <h3>For your website</h3>
 
-        </ul>
+            <ul>
 
-        <p>Agency partners can also add on additional client website support to help with retainers.</p>
+                <li><strong>Codebase management</strong>: A central, version-controlled master of your site&rsquo;s codebase.</li>
+
+                <li><strong>Regular site backups</strong>: Nightly backups of your site files and database to Amazon Web Services.</li>
+
+                <li><strong>Development site</strong>: A separate development version of your site on it&rsquo;s own proofing URL to test updates before sending them live.</li>
+
+                <li><strong>Uptime monitoring and error reporting</strong>: Any downtime or errors on your site are flagged immediately, so we can spring into action and fix the problem.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="package">
+
+            <h3>For your clients</h3>
+
+            <ul>
+                <li><strong>White label retainers</strong>: Backups, monitoring and bug-fixes for your client sites, for a small amount per month.</li>
+            </ul>
+
+        </div>
 
         <a class="cta" href="mailto:hello@pushtodev.com">
             Partner with us
@@ -159,9 +180,7 @@ get_header(); ?>
         
         <h2>Let&rsquo;s work together</h2>
 
-        <p>We can make your life easier, so why not give us a try?</p>
-
-        <p>Our services scale easily, so it&rsquo;s easy to start with a small project and take it from there.</p>
+        <p>We can make your life easier, so why not give us a try? Our services scale easily, so it&rsquo;s easy to start with a small project and take it from there.</p>
 
         <a class="cta" href="mailto:hello@pushtodev.com">
             Get in touch

@@ -329,15 +329,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.4;
   color: #f96b59; }
+  h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+    font-style: normal;
+    border-bottom: 2px solid currentColor; }
 
 h1 {
-  font-size: 2.4em;
-  margin-bottom: 0.5em; }
+  font-size: 3em;
+  margin-bottom: 0.4em; }
 
 h2 {
-  font-size: 1.4em;
-  margin-bottom: 1.71429em;
-  text-align: center; }
+  font-size: 2.1em;
+  margin-bottom: 1.14286em; }
 
 h3 {
   font-size: 1.2em;
@@ -351,7 +353,7 @@ p {
   margin-bottom: 1em; }
 
 small {
-  font-size: 0.9em; }
+  font-size: 0.8em; }
 
 strong {
   font-weight: 700; }
@@ -361,15 +363,17 @@ strong {
 
 .blockquote__content {
   display: block;
-  margin-bottom: 0.8em;
+  margin-bottom: 1.6em;
   padding: 1.6em;
   background-color: #f96b59;
-  color: #f7f7f8; }
+  border: 0;
+  color: #f7e2e0;
+  -webkit-box-shadow: 0px 1px 1.6em 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 1.6em 0px rgba(0, 0, 0, 0.15); }
   .blockquote__content > *:last-child {
     margin-bottom: 0; }
 
 cite {
-  font-size: 0.9em;
   display: block;
   text-align: right; }
 
@@ -394,7 +398,8 @@ a:active {
 
 ul, ol {
   margin: 0 0 1.2em;
-  padding-left: 1.6em; }
+  padding-left: 1.6em;
+  list-style: square; }
 
 li {
   margin-bottom: 0.8em; }
@@ -426,7 +431,7 @@ svg {
 .site-header {
   background-color: #33ccbb; }
   .site-header.section {
-    padding: 1.6em 6.4em 0;
+    padding: 1.6em 4.8em 0;
     border: 0; }
 
 .site-header__logo {
@@ -437,31 +442,37 @@ svg {
 
 .site-footer {
   padding: 1.6em 0;
-  background-color: #33ccbb;
-  color: #f7f7f8;
   text-align: center; }
+
+.site-footer__legal {
+  margin: 1em 0 0;
+  color: #a4a9b7; }
 
 .site-footer__social li {
   margin: 0 0.8em; }
 
 .section {
-  padding: 3.2em 6.4em;
-  border-bottom: 1px solid rgba(45, 56, 89, 0.1); }
+  padding: 4.8em;
+  border-bottom: 1px solid rgba(45, 56, 89, 0.1);
+  overflow: hidden; }
 
 .section__content {
   position: relative;
-  max-width: 42.5em;
+  max-width: 40em;
   margin: 0 auto;
   z-index: 1; }
 
 .intro {
   position: relative;
-  background-color: #33ccbb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#33ccbb), to(#32b6ac));
+  background: linear-gradient(#33ccbb 0%, #32b6ac 100%);
+  padding-top: 2.4em;
   border: 0;
   color: #f7f7f8; }
   .intro h1 {
     color: inherit; }
   .intro .section__content {
+    max-width: 42.5em;
     margin: 0; }
 
 #introBg {
@@ -470,11 +481,66 @@ svg {
   right: 0;
   max-width: 27.5em; }
 
+.summary .section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: none; }
+
+.summary h2 {
+  margin: 0 1.52381em 0 0;
+  text-align: left; }
+
+.summary p {
+  overflow: hidden;
+  margin: 0.4em 0 0 0; }
+
+.experience {
+  background-color: #f94680;
+  background: linear-gradient(45deg, #f94680 0%, #f96b59 100%);
+  color: #f7e5ec; }
+  .experience h2 {
+    color: #f7f7f8; }
+
 .experience__clients {
-  -webkit-column-gap: 1.6em;
-          column-gap: 1.6em;
+  margin-top: 3.2em;
+  -webkit-column-gap: 3.2em;
+          column-gap: 3.2em;
   -webkit-column-width: 10em;
-          column-width: 10em; }
+          column-width: 10em;
+  color: #f7f7f8; }
+
+.how-it-works .package {
+  margin: 3.2em 0;
+  padding: 1.6em;
+  background-color: #f94680;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed437a), to(#f94f86));
+  background: linear-gradient(#ed437a 0%, #f94f86 100%);
+  color: #f7e5ec;
+  -webkit-box-shadow: 0px 1px 1.6em 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 1.6em 0px rgba(0, 0, 0, 0.15); }
+  .how-it-works .package h3 {
+    color: #f7f7f8; }
+
+.testimonials {
+  background: radial-gradient(#95e2da, #32aea7);
+  color: #d0eeec; }
+  .testimonials h2 {
+    margin: 0;
+    color: #f7f7f8; }
+  .testimonials a, .testimonials a:visited {
+    color: #f7f7f8; }
+
+.contact {
+  text-align: center; }
+  .contact p {
+    text-align: left; }
 
 .cta {
   font-size: 1.2em;

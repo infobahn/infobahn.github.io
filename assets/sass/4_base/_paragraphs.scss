@@ -25,10 +25,12 @@
 
     .blockquote__content {
         display: block;
-        margin-bottom: space(half);
+        margin-bottom: space();
         padding: space();
         background-color: $color-orange;
-        color: $color-white;
+        border: 0;
+        color: mix($color-white, $color-orange, 85);
+        box-shadow: 0px 1px space() 0px rgba(0, 0, 0, 0.15);
 
         > *:last-child {
             margin-bottom: 0;
@@ -36,7 +38,7 @@
     }
 
     cite {
-        @include font-size(small, copy);
+        // @include font-size(small, copy);
         display: block;
         text-align: right;
     }

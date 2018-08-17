@@ -10,6 +10,12 @@
         font-weight: 700;
         line-height: 1.4;
         color: $color-heading;
+
+        em {
+            font-style: normal;
+            // color: $color-pink;
+            border-bottom: 2px solid currentColor;
+        }
     }
 
     h1 {
@@ -20,7 +26,7 @@
     h2 {
         @include font-size(h2, heading);
         margin-bottom: space(mid, $size-h2);
-        text-align: center;
+        // text-align: center;
     }
 
     h3 {
