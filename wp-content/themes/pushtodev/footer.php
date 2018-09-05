@@ -24,6 +24,12 @@
             <small>Push to Dev is incorporated in the Isle of Man #127449C</small>
         </p>
 
+        <p class="site-footer__legal">
+            <small style="font-size: 50%;">
+                <strong>Icon attributions</strong>: Coffee by Oksana Latysheva; hard skills by lastspark; flexible by AdbA Icons ❤️; spa by Nhor; and world by Juan Pablo Bravo; from the Noun Project 
+            </small>
+        </p>
+
     </footer>
 
 	<?php wp_footer(); ?>

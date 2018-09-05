@@ -6,11 +6,19 @@
         padding: space(landmark);
         border-bottom: 1px solid rgba($color-blue, 0.1);
         overflow: hidden;
+
+        @media only screen and (max-width: 768px) {
+            padding: space(landmark) space(double);
+        }
+
+        @media only screen and (max-width: 540px) {
+            padding: space(double) space();
+        }
     }
 
         .section__content {
             position: relative;
-            max-width: em(800, $base-font-size);
+            max-width: em(750, $base-font-size);
             margin: 0 auto;
             z-index: 1;
         }
@@ -19,48 +27,47 @@
     .intro {
         position: relative;
         background: linear-gradient($color-green 0%, mix($color-green, $color-blue, 85) 100%);
+        background: $color-green;
         padding-top: space(mid);
         border: 0;
         color: $color-white;
+        // text-align: center;
 
         h1 {
             color: inherit;
         }
 
         .section__content {
-            max-width: em(850, $base-font-size);
             margin: 0;
         }
     }
 
         #introBg {
+            // display: none;
             position: absolute;
             bottom: 0;
             right: 0;
-            max-width: em(550);
+            // max-width: em(550);
+            max-width: 20em;
+
+            @media only screen and (max-width: 540px) {
+                display: none;
+            }
         }
 
     .summary {
+        
+    }
 
-        .section__content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: none;
-        }
-
-        h2 {
-            margin: 0 space(double, $size-h2) 0 0;
-            text-align: left;
-        }
-
-        p {
-            overflow: hidden;
-            margin: space(quarter) 0 0 0;
-        }
+    .horsey {
+        background-color: $color-blue;
+        background: linear-gradient(mix($color-blue, $color-green, 90) 0%, $color-blue 100%);
+        // color: mix($color-green, $color-blue, 70);
+        color: mix($color-white, $color-blue, 90);
     }
 
     .experience {
+        position: relative;
         background-color: $color-pink;
         background: linear-gradient(45deg, $color-pink 0%, $color-orange 100%);
         color: mix($color-white, $color-pink, 90);
@@ -73,8 +80,21 @@
         .experience__clients {
             margin-top: space(double);
             column-gap: space(double);
-            column-width: em(200);
+            column-width: em(250);
             color: $color-white;
+
+            li {
+                margin-bottom: space(half);
+            }
+        }
+
+        .experience__icon {
+            position: absolute;
+            bottom: 50%;
+            right: 50%;
+            fill: rgba($color-white, 0.1);
+            // transform: translate(40%, 40%);
+            transform: translate(50%, 50%);
         }
 
     .how-it-works {
@@ -105,6 +125,10 @@
         a, a:visited {
             color: $color-white;
         }
+
+        .section__content {
+            max-width: em(1000);
+        }
     }
 
     .contact {
@@ -122,4 +146,8 @@
             margin: 0 em(-2);
             padding: em(2);
             border-width: 0 0 2px 0;
+
+            // @media only screen and (max-width: 540px) {
+            //     @include font-size(base, copy);
+            // }
         }

@@ -4,11 +4,20 @@
 
     p {
         margin: 0 0 space(threequarter);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .lede {
         @include font-size(large, copy);
         margin-bottom: space(threequarter, $size-copy-large);
+
+        @media only screen and (max-width: 540px) {
+            @include font-size(base, copy);
+            margin-bottom: space(threequarter, $base-font-size);
+        }
     }
 
     small {

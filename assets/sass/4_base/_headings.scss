@@ -20,16 +20,30 @@
 
     h1 {
         @include font-size(h1, heading);
-        margin-bottom: space(threequarter, $size-h1);
+        margin-bottom: space(mid, $size-h1);
+
+        @media only screen and (max-width: 540px) {
+            @include font-size(h2, heading);
+            margin-bottom: space(threequarter, $size-h2);
+        }
     }
 
     h2 {
         @include font-size(h2, heading);
         margin-bottom: space(mid, $size-h2);
-        // text-align: center;
+
+        @media only screen and (max-width: 540px) {
+            font-size: em(30);
+            margin-bottom: space(threequarter, 30);
+        }
     }
 
     h3 {
         @include font-size(h3, heading);
-        margin-bottom: space(threequarter, $size-h3);
+        margin-top: space(mid, $size-h3);
+        margin-bottom: space(base, $size-h3);
+
+        &:first-child {
+            margin-top: 0;
+        }
     }

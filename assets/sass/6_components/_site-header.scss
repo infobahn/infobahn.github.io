@@ -6,7 +6,7 @@
         background-color: $color-green;
 
         &.section {
-            padding: space() space(landmark) 0;
+            padding: space(mid) space(landmark) 0;
             border: 0;
         }
     }
@@ -16,5 +16,5 @@
         }
 
         #siteLogo {
-            max-width: em(200);
+            max-width: em(220);
         }

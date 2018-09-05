@@ -5,18 +5,13 @@
 // Styleguide Base.Lists
 
     ul, ol {
-        margin: 0 0 space(threequarter);
+        margin: 0 0 space();
         padding-left: space();
         list-style: square;
-
-        // ul, ol {
-        //     margin: space(quarter) 0;
-        //     padding-left: space(half);
-        // }
     }
 
         li {
-            margin-bottom: space(half);
+            margin-bottom: space();
 
             &:last-child {
                 margin-bottom: 0;
