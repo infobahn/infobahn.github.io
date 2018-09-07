@@ -453,12 +453,22 @@ svg {
   .site-header.section {
     padding: 2.25em 4.5em 0;
     border: 0; }
+    @media only screen and (max-width: 768px) {
+      .site-header.section {
+        padding-right: 3em;
+        padding-left: 3em; } }
+    @media only screen and (max-width: 540px) {
+      .site-header.section {
+        padding: 1.5em 1.5em 0; } }
 
 .site-header__logo {
   border: 0; }
 
 #siteLogo {
   max-width: 11em; }
+  @media only screen and (max-width: 540px) {
+    #siteLogo {
+      max-width: 8em; } }
 
 .site-footer {
   padding: 1.5em;
@@ -501,6 +511,9 @@ svg {
     color: inherit; }
   .intro .section__content {
     margin: 0; }
+  @media only screen and (max-width: 540px) {
+    .intro {
+      padding-top: 1.125em; } }
 
 #introBg {
   position: absolute;

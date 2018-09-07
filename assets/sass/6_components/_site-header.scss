@@ -8,6 +8,15 @@
         &.section {
             padding: space(mid) space(landmark) 0;
             border: 0;
+
+            @media only screen and (max-width: 768px) {
+                padding-right: space(double);
+                padding-left: space(double);
+            }
+
+            @media only screen and (max-width: 540px) {
+                padding: space() space() 0;
+            }
         }
     }
 
@@ -17,4 +26,8 @@
 
         #siteLogo {
             max-width: em(220);
+
+            @media only screen and (max-width: 540px) {
+                max-width: em(160);
+            }
         }

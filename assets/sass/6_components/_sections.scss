@@ -40,6 +40,10 @@
         .section__content {
             margin: 0;
         }
+
+        @media only screen and (max-width: 540px) {
+            padding-top: space(threequarter);
+        }
     }
 
         #introBg {
