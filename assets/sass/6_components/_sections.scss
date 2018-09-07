@@ -59,6 +59,11 @@
         
     }
 
+        .summary__columns {
+            column-gap: space(mid);
+            column-width: em(400);
+        }
+
     .horsey {
         background-color: $color-blue;
         background: linear-gradient(mix($color-blue, $color-green, 90) 0%, $color-blue 100%);

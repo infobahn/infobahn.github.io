@@ -461,12 +461,13 @@ svg {
   max-width: 11em; }
 
 .site-footer {
-  padding: 1.5em 0;
+  padding: 1.5em;
   text-align: center; }
 
 .site-footer__legal {
   margin: 0.9375em 0 0;
-  color: #a4a9b7; }
+  color: #a4a9b7;
+  line-height: 1; }
 
 .site-footer__social li {
   margin: 0 0.75em; }
@@ -509,6 +510,12 @@ svg {
   @media only screen and (max-width: 540px) {
     #introBg {
       display: none; } }
+
+.summary__columns {
+  -webkit-column-gap: 2.25em;
+          column-gap: 2.25em;
+  -webkit-column-width: 20em;
+          column-width: 20em; }
 
 .horsey {
   background-color: #2d3859;
@@ -580,10 +587,6 @@ svg {
 .features {
   margin: 4.5em -1.5em 0; }
 
-.features__title {
-  margin: 0 0 2.25em;
-  text-align: center; }
-
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,11 +596,27 @@ svg {
           justify-content: space-between;
   -webkit-box-align: top;
       -ms-flex-align: top;
-          align-items: top; }
+          align-items: top;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .features__feature {
   width: 25%;
   padding: 0 1.5em; }
+  @media only screen and (max-width: 1024px) {
+    .features__feature {
+      width: 50%; }
+      .features__feature:first-child {
+        margin-bottom: 3em; } }
+  @media only screen and (max-width: 450px) {
+    .features__feature {
+      width: 100%;
+      padding: 0 3em;
+      margin-bottom: 3em;
+      text-align: center; } }
+
+.features__title {
+  margin: 0 0 0.375em; }
 
 .features__icon {
   display: block;
