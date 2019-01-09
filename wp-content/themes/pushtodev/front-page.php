@@ -377,7 +377,7 @@ get_header(); ?>
 
                 <li><strong>Regular site backups</strong>: Nightly backups of your site files and database to Amazon Web Services.</li>
 
-                <li><strong>Development site</strong>: A separate development version of your site on it&rsquo;s own proofing URL to test updates before sending them live.</li>
+                <li><strong>Development site</strong>: A separate development version of your site on its own proofing URL to test updates before sending them live.</li>
 
                 <li><strong>Uptime monitoring and error reporting</strong>: Any downtime or errors on your site are flagged immediately, so we can spring into action and fix the problem.</li>
 
